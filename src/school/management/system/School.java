@@ -6,8 +6,8 @@ public class School {
 
     private List<Teacher> teachers;
     private List<Student> students;
-    private int totalMoneyEarned;
-    private int totalMoneySpent;
+    private static int totalMoneyEarned;
+    private static int totalMoneySpent;
 
     //thins that needs to happen when the schppl object is creted
     public School(List<Teacher> teachers, List<Student> students) {
@@ -37,15 +37,15 @@ public class School {
         return totalMoneyEarned;
     }
 
-    public void setTotalMoneyEarned(int totalMoneyEarned) {
-        this.totalMoneyEarned = totalMoneyEarned;
+    public static void updateTotalMoneyEarned(int MoneyEarned) {
+        totalMoneyEarned += MoneyEarned;
     }
 
     public int getTotalMoneySpent() {
         return totalMoneySpent;
     }
 
-    public void setTotalMoneySpent(int totalMoneySpent) {
-        this.totalMoneySpent = totalMoneySpent;
+    public void updateTotalMoneySpent(int MoneySpent) {
+        totalMoneyEarned -= MoneySpent;
     }
 }
