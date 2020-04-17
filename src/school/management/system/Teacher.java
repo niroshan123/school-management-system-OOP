@@ -29,8 +29,8 @@ public class Teacher {
         this.salary = salary;
     }
 
-    public void recieveSalary(int salary){
+    public  void  recieveSalary(int salary){
         salaryEarned+=salary;
-        School.updateTotalMoneyEarned(salary);
+        School.updateTotalMoneySpent(salary);
     }
 }
