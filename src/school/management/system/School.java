@@ -21,16 +21,16 @@ public class School {
         return teachers;
     }
 
-    public void setTeachers(List<Teacher> teachers) {
-        this.teachers = teachers;
+    public void addTeachers(Teacher teacher) {
+        teachers.add(teacher);
     }
 
     public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
+    public void addStudents(Student student) {
+        students.add(student);
     }
 
     public int getTotalMoneyEarned() {
